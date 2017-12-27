@@ -77,7 +77,7 @@ the_images.push( 'img/logo-loading.png');
 // 二维码
 // the_images.push( 'img/page/wx2.jpg');
 // 音乐
-the_images.push( 'img/audio/Music.png');
+// the_images.push( 'img/audio/Music.png');
 
 // console.log(the_images.length);
 
