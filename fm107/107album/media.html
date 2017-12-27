@@ -1,0 +1,927 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+    
+    <meta name="zqwai.com" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no"/>
+    <meta http-equiv="cleartype" content="on">
+    <!--分享-->
+    <meta itemprop="name" content="107+私家车"/>
+    <meta itemprop="description" name="description"  content="我们相信：1+1>2，当电台与私家车深度结合，我们看到无限可能，所以我们是私家车电台。"/>
+    <meta itemprop="image" content="img/share/share.jpg" />
+    <!--标题-->
+    <title>107+流媒体</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+<script>
+
+var phoneWidth =parseInt(window.screen.width);
+var phoneScale =phoneWidth/640;
+var ua =navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+    var version =parseFloat(RegExp.$1);
+    if(version>2.3){
+        document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+    } else{
+        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+    }
+} else {
+    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+//微信菜单屏蔽
+ function onBridgeReady() {
+     WeixinJSBridge.call('hideOptionMenu');
+ };
+ if (typeof WeixinJSBridge == "undefined") {
+     if (document.addEventListener) {
+         document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+     } else if (document.attachEvent) {
+         document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+         document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+     }
+ } else {
+     onBridgeReady();
+ };
+
+</script>
+
+
+</head>
+
+<body class="sMedia">
+
+<div id="loading" class="loadingWrap"><!-- loading -->
+    <div class="loadingInner">
+        <div class="loadingAnimate" id="progressbar">
+            <span class='logo-b'></span>
+            <span class='logo-n'></span>
+        </div>
+        <div class="loadingNumber" id="percent">
+            0%
+        </div>
+    </div>
+</div>
+
+<div id="landscape_hinter">
+    <div class="hinter_phone"></div>
+    <div class="hinter_rotate"></div>
+    <div class="hinter_text">竖屏体验效果更佳</div>
+</div>
+
+<div id="audiocontainer"><!-- 音乐 -->
+</div>
+
+<div id="popLay" class="box-pop-lay md-effect-8">
+    <div id="close" class="layClose"><span></span><span></span></div>
+    <div id="popCont" class="box-pop-cont md-content">
+        
+    </div>
+</div>
+
+
+<form id="form1" class="container s_media">
+
+<div class="swiper-container s1 s_moblie ">
+    <div class="swiper-wrapper">
+        <section class="swiper-slide slide1" data-hash="slide1">
+            <div class='box-moblie main-head'>
+                <header>
+                    <h1 class='t3' data-info='107+流媒体'></h1>
+                    <h2 class='text' data-info='听107 就够了' style="letter-spacing:.72em;">听107 就够了</h2>
+                </header>
+                <div class="head-triangle">
+                    <span class='t-left'></span>
+                    <span class='t-sTop'></span>
+                    <span class='t-sBottom'></span>
+                </div>
+            </div>
+            
+            <div class="box-moblie main-cont sub-cont" style="text-align: center;margin-top: -350px;">
+                <ul>
+                    <li>打开107，快乐送达。</li>
+                    <li style="margin-bottom:40px;">随时随地，全球包邮。</li>
+
+                    <li>私家车107是价值连城的购物车，</li>
+                    <li>无论是马路资讯、出行动态、生活服务、快乐行车的新鲜宝贝，</li>
+                    <li>下单107，轻松起步，快乐上路。</li>
+                    <li style="margin-bottom:40px;">玲琅满目的声音爆款，全球包邮。</li>
+
+                    <li>107的“广播流媒体”概念，覆盖私家车、覆盖手机端，</li>
+                    <li>听107，就够了。</li>
+                </ul>
+            </div>
+            
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_p-center j_bg_big jLazyBgInit" data-src='img/p1/bg/p1-bg-3.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide2" data-hash="slide2">
+            <div class="box-media main-media">
+                <div class="title">上班路上，全民点赞</div>
+                <ul class="cont">
+                    <li>一个专业私家车电台的</li>
+                    <li>上班路上是怎么样的？</li>
+                    <li>“精分时段，精准送达”！</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more fl sPopOpen7">了解更多</div>
+                    </li>
+                </ul>
+                <!-- <div class="line-v"></div>
+                <div class='line-h'></div> -->
+            </div>
+            <div class="radioList">
+                <ul>
+                    <li>
+                        <div class="name">上班路上·袁小逸脱口秀</div>
+                        <div class='box-sbtn clearfix'>
+                            <span class='sbtn fr sbtnLink1' data-link-id="0">收听节目</span>
+                            <span class='sbtn sbtn2 fr margin-r-10 sPopOpen1' data-page-id="0">节目介绍</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="name">上班路上·焕口气</div>
+                        <div class='box-sbtn clearfix'>
+                            <span class='sbtn fr sbtnLink1' data-link-id="1">收听节目</span>
+                            <span class='sbtn sbtn2 fr margin-r-10 sPopOpen1' data-page-id="1">节目介绍</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="name">上班路上·雯报纸</div>
+                        <div class='box-sbtn clearfix'>
+                            <span class='sbtn fr sbtnLink1' data-link-id="2">收听节目</span>
+                            <span class='sbtn sbtn2 fr margin-r-10 sPopOpen1' data-page-id="2">节目介绍</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sline sline-l"></div>
+            <div class="sline sline-r"></div>
+            <div class="sline sline-c"></div>
+
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_big jLazyBgInit" data-src='img/p4/bg/bg-2.png'></div>
+        </section>
+
+        <section class="swiper-slide slide3" data-hash="slide3">
+
+            <div class="box-media main-media">
+                <div class="title">下班路上，大显神通</div>
+                <ul class="cont">
+                    <li>有看点，有笑点，有意思，值得扒的雪姨都不放过。</li>
+                    <li>最优秀，最搞怪，最大胆，年轻时尚的大明都变现出色</li>
+                    <li>私家车下班路上，娱乐大爆炸，“娱乐大手笔”</li>
+                    <!-- <li class="box-btn clearfix">
+                        <div class="btn-more fl">了解更多</div>
+                    </li> -->
+                </ul>
+                <div class="line-v"></div>
+                <div class='line-h'></div>
+            </div>
+
+            <div class="sline sline-d"></div>
+            <div class="sline-text">
+                ← 左右滑动节目 即可查看 →
+            </div>
+
+            <div class="slist s2">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slide list1" data-hash="list1">
+                        <div class="n-cont">
+                            <div class="name">潮、爆、才、夯！Big Ming</div>
+                            <div class='box-sbtn clearfix'>
+                                <!-- <span class='sbtn fr sbtnLink2' data-link-id="0">收听节目</span> -->
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen2' data-page-id="0">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list2" data-hash="list2">
+                        <div class="n-cont">
+                            <div class="name">快乐Cube田小雪</div>
+                            <div class='box-sbtn clearfix'>
+                                <!-- <span class='sbtn fr sbtnLink2' data-link-id="1">收听节目</span> -->
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen2' data-page-id="1">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list3" data-hash="list3">
+                        <div class="n-cont">
+                            <div class="name">下班路上·心灵鳖汤时间</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr' sbtnLink2 data-link-id="2">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen2' data-page-id="2">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list4" data-hash="list4">
+                        <div class="n-cont">
+                            <div class="name">下班路上·私家车一起唱</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink2' data-link-id="3">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen2' data-page-id="3">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list5" data-hash="list5">
+                        <div class="n-cont">
+                            <div class="name">下班路上·饶舌Battle</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink2' data-link-id="4">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen2' data-page-id="4">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list6" data-hash="list6">
+                        <div class="n-cont">
+                            <div class="name">下班路上·大剧场</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink2' data-link-id="5">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen2' data-page-id="5">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list7" data-hash="list7">
+                        <div class="n-cont">
+                            <div class="name">下班路上·大爆炸曲苑杂坛</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink2' data-link-id="6">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen2' data-page-id="6">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_big jLazyBgInit" data-src='img/p4/bg/bg-1.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide4 listWhite" data-hash="slide4">
+
+            <div class="box-media main-media">
+                <div class="title">娱乐大爆炸·浙江文艺名专栏</div>
+            </div>
+            
+            <div class="sline sline-d"></div>
+            <div class="sline-text white">
+                ← 左右滑动节目 即可查看 →
+            </div>
+
+            <div class="slist s2">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slide list1" data-hash="list1">
+                        <div class="n-cont">
+                            <div class="name">袁老师来了</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="0">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="0">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list2" data-hash="list2">
+                        <div class="n-cont">
+                            <div class="name">空姐miss袁</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="1">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="1">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list3" data-hash="list3">
+                        <div class="n-cont">
+                            <div class="name">天后国际袁</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="2">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="2">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list4" data-hash="list4">
+                        <div class="n-cont">
+                            <div class="name">袁儿大夫寻医问药</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="3">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="3">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list5" data-hash="list5">
+                        <div class="n-cont">
+                            <div class="name">还珠格格</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="4">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="4">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list6" data-hash="list6">
+                        <div class="n-cont">
+                            <div class="name">田小雪随便唱-儿歌</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="5">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="5">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list7" data-hash="list7">
+                        <div class="n-cont">
+                            <div class="name">TVB</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="6">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="6">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list8" data-hash="list8">
+                        <div class="n-cont">
+                            <div class="name">韩剧</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="7">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="7">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list8" data-hash="list9">
+                        <div class="n-cont">
+                            <div class="name">蜡笔小新</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="8">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="8">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list10" data-hash="list10">
+                        <div class="n-cont">
+                            <div class="name">美少女战士</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="9">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="9">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list11" data-hash="list11">
+                        <div class="n-cont">
+                            <div class="name">恋爱课堂</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="10">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="10">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list12" data-hash="list12">
+                        <div class="n-cont">
+                            <div class="name">开运要你管</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="11">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="11">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list13" data-hash="list13">
+                        <div class="n-cont">
+                            <div class="name">常总来了</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="12">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="12">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list14" data-hash="list14">
+                        <div class="n-cont">
+                            <div class="name">常总读报</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="13">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="13">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list15" data-hash="list15">
+                        <div class="n-cont">
+                            <div class="name">五常大道</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="14">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="14">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list16" data-hash="list16">
+                        <div class="n-cont">
+                            <div class="name">新神经侠侣</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="15">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="15">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list17" data-hash="list17">
+                        <div class="n-cont">
+                            <div class="name">老汉秀</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="16">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="16">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list18" data-hash="list18">
+                        <div class="n-cont">
+                            <div class="name">动物世界</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="17">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="17">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list19" data-hash="list19">
+                        <div class="n-cont">
+                            <div class="name">四大美声</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="18">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="18">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list20" data-hash="list20">
+                        <div class="n-cont">
+                            <div class="name">诗朗诵</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="19">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="19">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list21" data-hash="list21">
+                        <div class="n-cont">
+                            <div class="name">山东快书</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="20">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="20">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list22" data-hash="list22">
+                        <div class="n-cont">
+                            <div class="name">流星花园</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="22">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="21">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list23" data-hash="list23">
+                        <div class="n-cont">
+                            <div class="name">小蝌蚪找妈妈</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="23">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="22">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list24" data-hash="list24">
+                        <div class="n-cont">
+                            <div class="name">阿哲相亲记</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="23">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="23">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list25" data-hash="list25">
+                        <div class="n-cont">
+                            <div class="name">福尔老师</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink3' data-link-id="24">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen3' data-page-id="24">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_p-center j_bg_big jLazyBgInit" data-src='img/p4/bg/bg-3.jpg'></div>
+        </section>
+        <section class="swiper-slide slide5 listWhite" data-hash="slide5">
+            <div class="box-media main-media">
+                <div class="title">加点娱乐，就会快乐</div>
+                <ul class="cont">
+                    <li>娱乐是一种能力、娱乐是一种魅力、娱乐是一种情怀</li>
+                    <li>107的奇妙能力</li>
+                </ul>
+                <div class="line-v"></div>
+                <div class='line-h'></div>
+            </div>
+            <div class="sline sline-d"></div>
+            <div class="sline-text white">
+                ← 左右滑动节目 即可查看 →
+            </div>
+
+            <div class="slist s2">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slide list1" data-hash="list1">
+                        <div class="n-cont">
+                            <div class="name">阿亮的烦恼生活</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="0">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="0">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list2" data-hash="list2">
+                        <div class="n-cont">
+                            <div class="name">心花路放</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="1">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="1">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list3" data-hash="list3">
+                        <div class="n-cont">
+                            <div class="name">城市卡通</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="2">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="2">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list4" data-hash="list4">
+                        <div class="n-cont">
+                            <div class="name">猛剧场</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="3">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="3">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list5" data-hash="list5">
+                        <div class="n-cont">
+                            <div class="name">超能娱乐圈</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="4">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="4">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list6" data-hash="list6">
+                        <div class="n-cont">
+                            <div class="name">娱乐红黑榜</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="5">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="5">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list7" data-hash="list7">
+                        <div class="n-cont">
+                            <div class="name">魅主播魅周末</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="6">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="6">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list8" data-hash="list8">
+                        <div class="n-cont">
+                            <div class="name">火星人音乐</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="7">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="7">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list8" data-hash="list9">
+                        <div class="n-cont">
+                            <div class="name">跑神计划</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="8">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="8">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list10" data-hash="list10">
+                        <div class="n-cont">
+                            <div class="name">车神计划</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="9">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="9">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list11" data-hash="list11">
+                        <div class="n-cont">
+                            <div class="name">吃神计划</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink4' data-link-id="10">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen4' data-page-id="10">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_p-center j_bg_big jLazyBgInit" data-src='img/p4/bg/bg-4.jpg'></div>
+        </section>
+        <section class="swiper-slide slide6" data-hash="slide6">
+
+            <div class="box-media main-media">
+                <div class="title">加点资讯，就会开阔</div>
+                <ul class="cont">
+                    <li>资讯有帮助判断、增加知识、大开眼界、提升境界、净化心灵等诸多作用</li>
+                    <li>——107的资讯，作用加倍！</li>
+                </ul>
+                <div class="line-v"></div>
+                <div class='line-h'></div>
+            </div>
+            <div class="sline sline-d"></div>
+            <div class="sline-text">
+                ← 左右滑动节目 即可查看 →
+            </div>
+
+            <div class="slist s2">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slide list1" data-hash="list1">
+                        <div class="n-cont">
+                            <div class="name">城市大眼睛</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink5' data-link-id="0">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen5' data-page-id="0">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list2" data-hash="list2">
+                        <div class="n-cont">
+                            <div class="name">高速大眼睛</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink5' data-link-id="1">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen5' data-page-id="1">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list3" data-hash="list3">
+                        <div class="n-cont">
+                            <div class="name">超级火星人</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink5' data-link-id="2">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen5' data-page-id="2">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list4" data-hash="list4">
+                        <div class="n-cont">
+                            <div class="name">107国学馆</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink5' data-link-id="3">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen5' data-page-id="3">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list5" data-hash="list5">
+                        <div class="n-cont">
+                            <div class="name">互联网+</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink5' data-link-id="4">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen5' data-page-id="4">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list6" data-hash="list6">
+                        <div class="n-cont">
+                            <div class="name">107微公益</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink5' data-link-id="5">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen5' data-page-id="5">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list7" data-hash="list7">
+                        <div class="n-cont">
+                            <div class="name">城市快报</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink5' data-link-id="6">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen5' data-page-id="6">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list8" data-hash="list8">
+                        <div class="n-cont">
+                            <div class="name">私家车气象</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr sbtnLink5' data-link-id="7">收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen5' data-page-id="7">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_p-center j_bg_big jLazyBgInit" data-src='img/p4/bg/bg-5.jpg'></div>
+        </section>
+        <section class="swiper-slide slide7" data-hash="slide7">
+
+            <div class="box-media main-media">
+                <div class="title">加点服务，就会贴心</div>
+                <ul class="cont">
+                    <li>服务好不好，关键看疗效。各种问题，各种解决，服务就要面面俱到</li>
+                    <li>——107的靠谱服务团队如是说。</li>
+                </ul>
+                <div class="line-v"></div>
+                <div class='line-h'></div>
+            </div>
+            <div class="sline sline-d"></div>
+            <div class="sline-text">
+                ← 左右滑动节目 即可查看 →
+            </div>
+
+            <div class="slist s2">
+                <div class="swiper-wrapper">
+                    <section class="swiper-slide list1" data-hash="list1">
+                        <div class="n-cont">
+                            <div class="name">城市私家车</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr'>收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen6' data-page-id="0">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list2" data-hash="list2">
+                        <div class="n-cont">
+                            <div class="name">房产六脉神剑</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr'>收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen6' data-page-id="1">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list3" data-hash="list3">
+                        <div class="n-cont">
+                            <div class="name">买房找舒云</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr'>收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen6' data-page-id="2">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list4" data-hash="list4">
+                        <div class="n-cont">
+                            <div class="name">107健康会所</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr'>收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen6' data-page-id="3">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list5" data-hash="list5">
+                        <div class="n-cont">
+                            <div class="name">万万没想到</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr'>收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen6' data-page-id="4">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list6" data-hash="list6">
+                        <div class="n-cont">
+                            <div class="name">买车找老陈</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr'>收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen6' data-page-id="5">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list7" data-hash="list7">
+                        <div class="n-cont">
+                            <div class="name">旅游找李sir</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr'>收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen6' data-page-id="6">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list8" data-hash="list8">
+                        <div class="n-cont">
+                            <div class="name">万能亲子圈</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr'>收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen6' data-page-id="7">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                    <section class="swiper-slide list8" data-hash="list9">
+                        <div class="n-cont">
+                            <div class="name">在清华听演讲</div>
+                            <div class='box-sbtn clearfix'>
+                                <span class='sbtn fr'>收听节目</span>
+                                <span class='sbtn sbtn2 fr margin-r-10 sPopOpen6' data-page-id="8">节目介绍</span>
+                            </div>
+                        </div>
+                        <div class="sling"></div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_p-center j_bg_big jLazyBgInit" data-src='img/p4/bg/bg-6.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide8" data-hash="slide8">
+            <div class="logo-album logo-album-menu"></div>
+
+            <ul class="box-menu-btn">
+                <li>
+                    <a href="index.html">107+私家车</a>
+                </li>
+                <li>
+                    <a href="mobile.html">107+移动端</a>
+                </li>
+                <li>
+                    <a href="compere.html">107+男神女神</a>
+                </li>
+                <li>
+                    <a href="media.html">107+流媒体</a>
+                </li>
+                <li>
+                    <a href="economic.html">107+分享经济</a>
+                </li>
+            </ul>
+            <!-- <div class="scroll-Up"></div> -->
+            <div class="J_bg j_bg_p-center j_bg_big jLazyBgInit" data-src='img/p1/bg/p1-bg-1.jpg'></div>
+            <!-- <div class="J_bg bg_color-black"></div> -->
+        </section>
+    </div>
+</div>
+
+</form>
+
+</body>
+
+<script src="js/jquery.1.11.0.min.js"></script>
+<script src="js/jquery.imgpreload.min.js"></script>
+<script src="js/dist/js/swiper.min.js"></script>
+<script src="js/animo.min.js"></script>
+<script src="js/media.js"></script> 
+
+</html>

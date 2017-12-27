@@ -1,0 +1,695 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+    
+    <meta name="zqwai.com" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no"/>
+    <meta http-equiv="cleartype" content="on">
+    <!--分享-->
+    <meta itemprop="name" content="107+私家车"/>
+    <meta itemprop="description" name="description"  content="我们相信：1+1>2，当电台与私家车深度结合，我们看到无限可能，所以我们是私家车电台。"/>
+    <meta itemprop="image" content="img/share/share.jpg" />
+    <!--标题-->
+    <title>107+分享经济</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+
+var phoneWidth =parseInt(window.screen.width);
+var phoneScale =phoneWidth/640;
+var ua =navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+    var version =parseFloat(RegExp.$1);
+    if(version>2.3){
+        document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+    } else{
+        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+    }
+} else {
+    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+//微信菜单屏蔽
+function onBridgeReady() {
+    WeixinJSBridge.call('hideOptionMenu');
+};
+if (typeof WeixinJSBridge == "undefined") {
+ if (document.addEventListener) {
+     document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+ } else if (document.attachEvent) {
+     document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+     document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+ }
+} else {
+ onBridgeReady();
+};
+wx.ready(function(){
+    wx.hideOptionMenu();
+});
+</script>
+
+
+</head>
+
+<body>
+
+<div id="loading" class="loadingWrap"><!-- loading -->
+    <div class="loadingInner">
+        <div class="loadingAnimate" id="progressbar">
+            <span class='logo-b'></span>
+            <span class='logo-n'></span>
+        </div>
+        <div class="loadingNumber" id="percent">
+            0%
+        </div>
+    </div>
+</div>
+
+<div id="landscape_hinter">
+    <div class="hinter_phone"></div>
+    <div class="hinter_rotate"></div>
+    <div class="hinter_text">竖屏体验效果更佳</div>
+</div>
+
+<div id="audiocontainer"><!-- 音乐 -->
+</div>
+<!-- md-effect-8 -->    
+
+<div id="popLay" class="box-pop-lay md-effect-8">
+    <div id="close" class="layClose"><span></span><span></span></div>
+    <div id="popCont" class="box-pop-cont md-content">
+    </div>
+</div>
+
+<form id="form1" class="container"><!-- container -->
+<div class="swiper-container a1 s_moblie">
+    <div class="swiper-wrapper">
+        <section class="swiper-slide slide1" data-hash="slide1">
+            <div class='box-moblie main-head'>
+                <header>
+                    <h1 class='t4' data-info='107+分享经济'></h1>
+                    <h2 class='text' data-info='够朋友 有意思' style="letter-spacing:.72em;">够朋友 有意思</h2>
+                </header>
+                <div class="head-triangle">
+                    <span class='t-left'></span>
+                    <span class='t-sTop'></span>
+                    <span class='t-sBottom'></span>
+                </div>
+            </div>
+            
+            <div class="box-moblie main-cont sub-cont" style="text-align: center;margin-top: -260px;">
+                <ul style='font-size: 1.6rem;'>
+                    <li style="margin-bottom:40px;">我们相信，<span style='font-size: 2rem;'>1+0=10</span></li>
+                    <li>0是大开的脑洞</li>
+                    <li style="margin-bottom:40px;">0是创意的原点</li>
+                    <li>活动的方式有10000种</li>
+                    <li>而我们还在</li>
+                    <li>持续更新</li>
+                </ul>
+            </div>
+            
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_p-center j_bg_big jLazyBgInit" data-src='img/p1/bg/p1-bg-4.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide2" data-hash="slide2">
+
+            <div class="box-economic main-economic main-economic-pic">
+                <ul class="nCont">
+                    <li>汽车、皇宫、音乐会</li>
+                    <li>我们结合一切资源，</li>
+                    <li>打造一个前所未有的震撼之夜。</li>
+                </ul>
+
+                <ul class="mainTilte mainTilte tilte1">
+                    <li>＋创意</li>
+                    <li>我们始终领跑娱乐</li>
+                </ul>
+
+                <ul class="nTitle">
+                    <li>主题：首次皇宫汽车音乐节</li>
+                    <li>受众：最具消费能力的私家车主</li>
+                </ul>
+                <ul class="nExplan">
+                    <li style="margin-bottom:20px;">1+1不是创意，你+我才是王道。</li>
+                    <li>结合一切可以结合的资源，</li>
+                    <li>然后，绽放！</li>
+                    <li>成就娱乐活动的传奇。</li>
+                </ul>
+                <div class="box-triangle">
+                    <div class="head-triangle triangle1">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+
+                    <div class="head-triangle triangle2">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle3">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p5/bg/bg-2.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide3" data-hash="slide3">
+
+            <div class="box-case main-case main-case-pic">
+                <h1 class="title1"><span>经典案例之</span>《皇宫汽车音乐会》</h1>
+                <ul class="nCont">
+                    <li>时间：4月18日</li>
+                    <li>地点：横店明清宫苑太和殿广场</li>
+                </ul>
+                <ul class="nExplan">
+                    <li>FM107皇宫汽车音乐会</li>
+                    <li>荣获浙江广播集团</li>
+                    <li>最佳活动营销创意执行奖</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more fl sbtnLink" data-link-id='0'>相册展示</div>
+                        <div class="btn-more fl btn-listen sPopOpen0">了解更多</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_big jLazyBgInit" data-src='img/p5/bg/bg-1.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide4" data-hash="slide4">
+
+            <div class="box-economic main-economic main-economic-black main-economic-pic">
+
+                <ul class="mainTilte tilte2">
+                    <li>＋情怀</li>
+                    <li>我们始终领跑文艺</li>
+                </ul>
+                <ul class="nTitle">
+                    <li>主题：喜欢艺术，懂得生活</li>
+                    <li>受众：文艺小清新</li>
+                </ul>
+                <ul class="nCont">
+                    <li>有些地方，有些音乐</li>
+                    <li>可以让人慢下来，可以让人静下来</li>
+                </ul>
+                <ul class="nExplan">
+                    <li>音乐是听得见的情怀，</li>
+                    <li style="margin-bottom:20px;">情怀是心深处的乡园。</li>
+
+                    <li>或者，正因为如此，有些时候，有些地方，</li>
+                    <li>总会让人在不经意间被感动。</li>
+                </ul>
+
+                <div class="box-triangle">
+                    <div class="head-triangle triangle1">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle2">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle3">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p5/bg/bg-3.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide5" data-hash="slide5">
+
+            <div class="box-case main-case main-case-black  main-case-pic">
+                <h1 class="title2"><span>经典案例之</span>《古镇民谣音乐节》</h1>
+                <ul class="nCont">
+                    <li>时间：美好的金秋十月</li>
+                    <li>地点：廿八都古镇</li>
+                </ul>
+                <ul class="nExplan">
+                    <li>古镇里开音乐节，来自全国各大古镇的民谣歌手齐聚一堂，从未有过的视听盛宴！八天，我们吸引了上万的游客齐聚廿八都，游古镇、听民谣！</li>
+                    <li>八天八场演出，不同的是观众，相同的是场场精彩绝伦。</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more btn-black sbtnLink" data-link-id='1'>相册展示</div>
+                        <!-- <div class="btn-more btn-listen">相册展示</div> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_big jLazyBgInit" data-src='img/p5/bg/bg-4.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide6" data-hash="slide6">
+
+            <div class="box-economic main-economic main-economic-case main-economic-pic">
+                <ul class="mainTilte tilte3">
+                    <li>＋明星</li>
+                    <li>我们始终领跑综艺</li>
+                    <li class="caseName"><span>经典案例之</span>《百场娱乐盛宴》</li>
+                </ul>
+                <ul class="nTitle">
+                    <li>主题：超级巨星</li>
+                    <li>受众：粉丝军团</li>
+                </ul>
+                <ul class="nCont">
+                    <li>时间：每到明星做演唱会时，每到话剧登陆杭城时，每到大片上映时。</li>
+                    <li>地点：黄龙体育场、黄龙体育馆、杭州各大剧院</li>
+                </ul>
+                <ul class="nExplan">
+                    <li>哪个明星的演唱会最红我们就找谁！</li>
+                    <li>哪部话剧最有影响力我们就推它！</li>
+                    <li>哪场电影最火爆我们就看它！</li>
+                    <li>百场娱乐盛宴，</li>
+                    <li>徐主播家的客厅是明星们的秘密花园。</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more sbtnLink" data-link-id='2'>相册展示</div>
+                        <!-- <div class="btn-more btn-listen fl">相册展示</div> -->
+                    </li>
+                </ul>
+                <div class="box-triangle">
+                    <div class="head-triangle triangle1">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle2">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle3">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p5/bg/bg-5.jpg'></div>
+            <div class="J_bg bg_color-black"></div>
+        </section>
+
+        <section class="swiper-slide slide7" data-hash="slide7">
+
+            <div class="box-economic main-economic main-economic-pic">
+
+                <ul class="mainTilte tilte4">
+                    <li>＋爱心</li>
+                    <li>我们始终领跑公益</li>
+                </ul>
+                <ul class="nTitle">
+                    <li>主题：帮助别人快乐自己</li>
+                    <li>受众：公益先锋与善助者</li>
+                </ul>
+                <ul class="nCont">
+                    <li>做人呢，最重要就是开心，</li>
+                    <li>开心呢，就要为正能量点赞。</li>
+                </ul>
+                <ul class="nExplan">
+                    <li>不做标榜，不做炫耀。</li>
+                    <li>做公益，追求的是内心的快乐</li>
+                    <li style="margin-bottom:20px;">献爱心，得到的是助人的幸福</li>
+
+                    <li>赠人玫瑰，手留余香。</li>
+                    <li>快乐幸福，就是如此简单。</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more sPopOpen" data-case-id='1'>案例展示</div>
+                        <!-- <div class="btn-more btn-listen fl">相册展示</div> -->
+                    </li>
+                </ul>
+                <div class="box-triangle">
+                    <div class="head-triangle triangle1">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle2">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle3">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p5/bg/bg-6.jpg'></div>
+            <div class="J_bg bg_color-black"></div>
+        </section>
+        
+        <section class="swiper-slide slide8" data-hash="slide8">
+        
+            <div class="box-economic main-economic main-economic-black main-economic-pic">
+                <ul class="mainTilte tilte5">
+                    <li>＋梦想</li>
+                    <li>我们始终领跑旅行</li>
+                </ul>
+
+                <ul class="nTitle">
+                    <li>主题：想去玩</li>
+                    <li>受众：想玩儿的们</li>
+                </ul>
+                <ul class="nCont">
+                    <li>世界那么大，一起去看看；</li>
+                    <li>独家旅行计划，创意旅行方案。</li>
+                </ul>
+                <ul class="nExplan">
+                    <li>车上不仅有107，还有远方。</li>
+                    <li>我们用特色旅行定制世界。</li>
+                    <li>一路上，还有，</li>
+                    <li>志趣相投的旅伴，幽默风趣的领队。</li>
+                    <li>我们把旅行社、航空公司、酒店、景点…</li>
+                    <li>一并打包，特惠送达。</li>
+                    
+                    <li class="box-btn clearfix">
+                        <div class="btn-more btn-black sPopOpen" data-case-id='2'>案例展示</div>
+                    </li>
+                </ul>
+                <div class="box-triangle">
+                    <div class="head-triangle triangle1">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle2">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle3">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p5/bg/bg-7.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide9" data-hash="slide9">
+        
+            <div class="box-economic main-economic main-economic-pic">
+
+                <ul class="mainTilte tilte6">
+                    <li>＋时尚</li>
+                    <li>我们始终领跑一步</li>
+                </ul>
+
+                <ul class="nTitle">
+                    <li>主题：时尚一起造</li>
+                    <li>受众：公益先锋与善助者</li>
+                </ul>
+                <ul class="nCont">
+                    <li>做人呢，最重要就是开心，</li>
+                    <li>受众：潮人和更潮的人 </li>
+                </ul>
+                <ul class="nExplan">
+                    <li>领先半步是一种境界。</li>
+                    <li style="margin-bottom:20px;">多一点是show，少一点是low。</li>
+
+                    <li>时尚总是比生活快上半步</li>
+                    <li style="margin-bottom:20px;">于是，领先了潮流</li>
+                    
+                    <li>我们总是会早走那么半步</li>
+                    <li>于是，领跑了时尚</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more sPopOpen" data-case-id='3'>案例展示</div>
+                    </li>
+                </ul>
+                <div class="box-triangle">
+                    <div class="head-triangle triangle1">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle2">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle3">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p5/bg/bg-8.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide10" data-hash="slide10">
+        
+            <div class="box-economic main-economic main-economic-pic">
+                <ul class="mainTilte tilte7">
+                    <li>＋校园</li>
+                    <li>我们始终领跑未来</li>
+                </ul>
+
+                <ul class="nTitle">
+                    <li>主题：奔跑吧，校园</li>
+                    <li>受众：未来的主人翁 </li>
+                </ul>
+                <ul class="nCont">
+                    <li>价值要从娃娃抓起。</li>
+                    <li>这一点，你明瞭，我明瞭。 </li>
+                </ul>
+                <ul class="nExplan">
+                    <li>在校园中播撒梦想，</li>
+                    <li>我们收获的是未来！</li>
+                    <li>美美哒！棒棒哒！</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more sPopOpen" data-case-id='4'>案例展示</div>
+                    </li>
+                </ul>
+                <div class="box-triangle">
+                    <div class="head-triangle triangle1">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle2">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle3">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p5/bg/bg-9.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide11" data-hash="slide11">
+        
+            <div class="box-economic main-economic main-economic-pic">
+                <ul class="mainTilte tilte8">
+                    <li>＋邻里</li>
+                    <li>我们始终领跑生活</li>
+                </ul>
+                <ul class="nTitle">
+                    <li>主题：HAPPY家庭节</li>
+                    <li>受众：生活家  </li>
+                </ul>
+                <ul class="nCont">
+                    <li>离家越近，离心越近</li>
+                    <li>发现平凡的生活中 </li>
+                    <li>所有不平凡的快乐</li>
+                </ul>
+                <ul class="nExplan">
+                    <li>舞台很大，总要回家。</li>
+                    <li>社区是离家最近的舞台，</li>
+                    <li style="margin-bottom:20px;">平凡，但充满市井的乐趣。</li>
+
+                    <li>生活本来平凡，生活本该快乐。</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more sPopOpen" data-case-id='5'>案例展示</div>
+                        <!-- <div class="btn-more btn-listen fl">相册展示</div> -->
+                    </li>
+                </ul>
+                <div class="box-triangle">
+                    <div class="head-triangle triangle1">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle2">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle3">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p5/bg/bg-10.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide12" data-hash="slide12">
+        
+            <div class="box-economic main-economic main-economic-pic">
+
+                <ul class="mainTilte tilte9">
+                    <li>＋运动</li>
+                    <li>我们始终领跑健康</li>
+                </ul>
+                <ul class="nTitle">
+                    <li>主题：运动最美</li>
+                    <li>受众：热活派  </li>
+                </ul>
+                <ul class="nCont">
+                    <li>工作很忙 脚步很快。</li>
+                    <li>运动很好，运动让人心情愉快！</li>
+                </ul>
+                <ul class="nExplan">
+                    <li>你的微信运动排第几？</li>
+                    <li>你的运动APP有几个？</li>
+                    <li>你的健康计划有没有？</li>
+                    <li>你的运动伙伴多不多？</li>
+                    <li>来吧，加入我们！</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more sPopOpen" data-case-id='6'>案例展示</div>
+                    </li>
+                </ul>
+                <div class="box-triangle">
+                    <div class="head-triangle triangle1">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle2">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle3">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p5/bg/bg-11.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide13" data-hash="slide13">
+        
+            <div class="box-economic main-economic main-economic-black main-economic-pic">
+
+                <ul class="mainTilte tilte10">
+                    <li>＋Jewelry</li>
+                    <li>我们始终领跑魅力</li>
+                </ul>
+                <ul class="nTitle">
+                    <li>主题：美好装点自己</li>
+                    <li>受众：精致生活享受者</li>
+                </ul>
+                <ul class="nCont">
+                    <li>我们不跟风，我们只寻觅独特。 </li>
+                    <li>淬火而生，是光耀众生灵石的凝练。</li>
+                </ul>
+                <ul class="nExplan">
+                    <li>以我手，筑其型；</li>
+                    <li>依我心，授其韵。</li>
+
+                    <li>是珠宝，我们再为她增添内涵!</li>
+                    <li>是品牌，我们更为她附上价值！</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more btn-black sPopOpen" data-case-id='7'>案例展示</div>
+                    </li>
+                </ul>
+                <div class="box-triangle">
+                    <div class="head-triangle triangle1">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle2">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                    <div class="head-triangle triangle3">
+                        <span class='t-left'></span>
+                        <span class='t-sTop'></span>
+                        <span class='t-sBottom'></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p5/bg/bg-12.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide14" data-hash="slide14">
+            <div class="logo-album logo-album-menu"></div>
+
+            <ul class="box-menu-btn">
+                <li>
+                    <a href="index.html">107+私家车</a>
+                </li>
+                <li>
+                    <a href="mobile.html">107+移动端</a>
+                </li>
+                <li>
+                    <a href="compere.html">107+男神女神</a>
+                </li>
+                <li>
+                    <a href="media.html">107+流媒体</a>
+                </li>
+                <li>
+                    <a href="economic.html">107+分享经济</a>
+                </li>
+            </ul>
+            <!-- <div class="scroll-Up"></div> -->
+            <div class="J_bg j_bg_p-center j_bg_big jLazyBgInit" data-src='img/p1/bg/p1-bg-1.jpg'></div>
+            <!-- <div class="J_bg bg_color-black"></div> -->
+        </section>
+    </div>
+</div>
+</form>
+
+</body>
+
+<script src="js/jquery.1.11.0.min.js"></script>
+<script src="js/jquery.imgpreload.min.js"></script>
+<script src="js/dist/js/swiper.min.js"></script>
+<script src="js/animo.min.js"></script>
+<script src="js/economic.js"></script> 
+
+</html>

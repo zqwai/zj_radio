@@ -1,0 +1,1330 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+    
+    <meta name="zqwai.com" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no"/>
+    <meta http-equiv="cleartype" content="on">
+    <!--分享-->
+    <meta itemprop="name" content="107+私家车"/>
+    <meta itemprop="description" name="description"  content="我们相信：1+1>2，当电台与私家车深度结合，我们看到无限可能，所以我们是私家车电台。"/>
+    <meta itemprop="image" content="img/share/share.jpg" />
+    <!--标题-->
+    <title>107+移动端</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+<script>
+
+var phoneWidth =parseInt(window.screen.width);
+var phoneScale =phoneWidth/640;
+var ua =navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+    var version =parseFloat(RegExp.$1);
+    if(version>2.3){
+        document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+    } else{
+        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+    }
+} else {
+    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+//微信菜单屏蔽
+ function onBridgeReady() {
+     WeixinJSBridge.call('hideOptionMenu');
+ };
+ if (typeof WeixinJSBridge == "undefined") {
+     if (document.addEventListener) {
+         document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+     } else if (document.attachEvent) {
+         document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+         document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+     }
+ } else {
+     onBridgeReady();
+ };
+
+</script>
+
+
+</head>
+
+<body class="sMobile">
+
+<div id="loading" class="loadingWrap"><!-- loading -->
+    <div class="loadingInner">
+        <div class="loadingAnimate" id="progressbar">
+            <span class='logo-b'></span>
+            <span class='logo-n'></span>
+        </div>
+        <div class="loadingNumber" id="percent">
+            0%
+        </div>
+    </div>
+</div>
+
+<div id="landscape_hinter">
+    <div class="hinter_phone"></div>
+    <div class="hinter_rotate"></div>
+    <div class="hinter_text">竖屏体验效果更佳</div>
+</div>
+
+<div id="audiocontainer"><!-- 音乐 -->
+</div>
+
+<!-- md-effect-8 -->
+<div id="popLay" class="box-pop-lay md-effect-8 ">
+    <div id="close" class="layClose"><span></span><span></span></div>
+    <div id="popCont" class="box-pop-cont md-content">
+
+    </div>
+</div>
+
+
+<!-- md-effect-8 -->
+<div id="popLayPic" class="box-pop-lay md-effect-8 ">
+    <div id="closePic" class="layClose"><span></span><span></span></div>
+    <div id="popPic" class="box-pop-pic md-content">
+
+    </div>
+</div>
+
+<form id="form1" class="container"><!-- container -->
+<div class="swiper-container a1 s_moblie">
+    <div class="swiper-wrapper">
+
+        <section class="swiper-slide slide0" data-hash="slide0">
+            <div class='box-moblie main-head'>
+                <header>
+                    <h1 class='t1' data-info='107+移动端'></h1>
+                    <h2 class='t1' data-info='广播汽车相遇，我们大显神通'></h2>
+                </header>
+                <div class="head-moblie"></div>
+            </div>
+            
+            <div class="box-moblie main-cont sub-cont" style="text-align: center;margin-top: -200px;">
+                <ul>
+                    <li>车+电台+新媒体</li>
+                    <li>是的，107主导了这次广播发展史上的革命创举，</li>
+                    <li>以汽车为核心载体，想秀什么秀什么，</li>
+                    <li>当电台与新媒体深度结合，我们看到了无限可能。</li>
+                </ul>
+            </div>
+
+            <div class="scroll-Up"></div>
+            <!-- <div class="J_bg bg-blue-1"></div> -->
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p1/bg/p1-bg-1.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide1" data-hash="slide1">
+            <div class='box-moblie main-head'>
+                <header>
+                    <h1 class='t1' data-info='107+移动端'></h1>
+                    <h2 class='t1' data-info='广播汽车相遇，我们大显神通'></h2>
+                </header>
+                <div class="head-moblie"></div>
+            </div>
+            <div class="box-moblie main-cont">
+                <h2 class='t1' data-info='大显神通之'></h2>
+                <h1 class='t1' data-info='《跑神计划》'></h1>
+                <div class="line"></div>
+                <ul>
+                    <li>107＋奔跑的人+奔跑路线＋壕福利群＋N个红包</li>
+                    <li>霓虹七点，灯火阑珊的杭城街道、写字楼、商业综合体…</li>
+                    <li>跑神少聪、阳阳携带一众鲜花鲜肉，</li>
+                    <li>身穿荧光战服，恣意奔跑，</li>
+                    <li>亮瞎杭城。</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more fl sbtnLink" data-link-id='0'>收听节目</div>
+                        <div class="btn-more btn-listen fl sPopOpen" data-info-id='0'>了解更多</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll-Up"></div>
+            <!-- <div class="J_bg bg-blue-1"></div> -->
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p2/bg/mobile-bg-0.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide2" data-hash="slide2">
+            <div class="box-moblie main-cont sub-cont">
+                <h1 class='t1' data-info='《跑神计划》' style="margin-bottom: 10px;"></h1>
+                <h3>——心花路放</h3>
+                <div class="line"></div>
+                <ul>
+                    <!-- <li>何时跑：工作日晚上，还有周六、周天，反正没得休！</li> -->
+                    <li>何时跑：Every night，来吧!</li>
+                    <li>去哪跑：景区、写字楼、CBD、Shopping Mall…</li>
+                    <li>怎么跑：夜跑、彩跑、亲子跑、情侣跑、理财跑… </li>
+                    <li>至尊跑：杭州国际马拉松，电台直播，跑神团纵横杭马！</li>
+                    
+                    <li class="box-btn clearfix">
+                        <div class="btn-more fl sbtnLink" data-link-id='5'>风采展示</div>
+                        <div class="btn-more btn-listen fl sPopOpen" data-info-id='5'>了解更多</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll-Up"></div>
+            <div class="J_bg  j_bg_p-center j_bg_small jLazyBgInit" data-src='img/p2/bg/mobile-bg-1.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide3" data-hash="slide3">
+            <div class='box-moblie main-head'>
+                <header>
+                    <h1 class='t1' data-info='107+移动端'></h1>
+                    <h2 class='t1' data-info='广播汽车相遇，我们大显神通'></h2>
+                </header>
+                <div class="head-moblie"></div>
+            </div>
+            <div class="box-moblie main-cont">
+                <h2 class='t1' data-info='大显神通之'></h2>
+                <h1 class='t2' data-info='《车神计划》'></h1>
+                <div class="line"></div>
+                <ul>
+                    <li>107+APP+车品牌+无限品牌+公益行动；</li>
+                    <li>传统媒体与创意“联姻”，新媒体电台与电波紧密携手。</li>
+                    <li>“车＋电台＋新媒体”，这是广播发展史上的革命创举。</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more fl sbtnLink" data-link-id='1'>收听节目</div>
+                        <div class="btn-more  btn-listen fl sPopOpen" data-info-id='1'>了解更多</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_small jLazyBgInit" data-src='img/p2/bg/mobile-bg-3.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide4" data-hash="slide4">
+            <div class="box-carLogo">
+                <!-- <div class="line-c-v"></div> -->
+                <h1 class="a1">车神之车</h1>
+                <div class="line a2"></div>
+                <div class="box-car">
+                    <ul class='carLogo carLogo1 clearfix'>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo2 clearfix'>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo3 clearfix'>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo4 clearfix'>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo5 clearfix'>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo6 clearfix'>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo7 clearfix'>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo8 clearfix'>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo9 clearfix'>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo10 clearfix'>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo11 clearfix'>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class='carLogo carLogo12 clearfix'>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <h1 class="a3">车神之路</h1>
+                <div class="line a4"></div>
+                <ul class='appLogo clearfix'>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h1 class="a5">车神之礼</h1>
+                <div class="line a6"></div>
+                <ul class='brandLogo clearfix'>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="scroll-Up"></div>
+            <div class="J_bg jLazyBgInit" data-src='img/p2/bg/mobile-bg-4.jpg'></div>
+        </section>
+
+        <section class="swiper-slide slide5" data-hash="slide5">
+            <div class='box-moblie main-head'>
+                <header>
+                    <h1 class='t1' data-info='107+移动端'></h1>
+                    <h2 class='t1' data-info='广播汽车相遇，我们大显神通'></h2>
+                </header>
+                <div class="head-moblie"></div>
+            </div>
+            <div class="box-moblie main-cont">
+                <h2 class='t1' data-info='大显神通之'></h2>
+                <h1 class='t3' data-info='《吃神计划》'></h1>
+                <div class="line"></div>
+                <ul>
+                    <li>电台视频同步直播的美食节目</li>
+                    <li>107阿亮+吃神团＋吃货+餐厅＋视频直播＋品牌</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more fl  sbtnLink" data-link-id='2'>收听节目</div>
+                        <div class="btn-more btn-listen fl sPopOpen" data-info-id='2'>了解更多</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_big jLazyBgInit" data-src='img/p2/bg/mobile-bg-5.jpg'></div>
+            <div class="J_bg bg_color-black"></div>
+        </section>
+
+        <section class="swiper-slide slide6 color-black" data-hash="slide6">
+            <div class='box-moblie main-head'>
+                <header>
+                    <h1 class='t1' data-info='107+移动端'></h1>
+                    <h2 class='t1' data-info='广播汽车相遇，我们大显神通'></h2>
+                </header>
+                <div class="head-moblie"></div>
+            </div>
+            <div class="box-moblie main-cont">
+                <h2 class='t1' data-info='大显神通之'></h2>
+                <h1 class='t4' data-info='《游神计划》'></h1>
+                <div class="line"></div>
+                <ul>
+                    <li>李SIR秒杀团：性价比最高的旅行秒杀！</li>
+                    <li>领队李SIR联手各大旅行社、旅游门户网站，</li>
+                    <li>每周末推出6款以上短途、长线旅游产品，</li>
+                    <li>报李SIR名字，享受到同等产品市场最低价！</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more fl sbtnLink" data-link-id='3'>收听节目</div>
+                        <div class="btn-more btn-listen fl sPopOpen" data-info-id='3'>了解更多</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_p-center j_bg_big jLazyBgInit" data-src='img/p2/bg/mobile-bg-6.jpg'></div>
+            <div class="J_bg bg_color-black"></div>
+        </section>
+
+        <section class="swiper-slide slide7" data-hash="slide7">
+            <div class='box-moblie main-head'>
+                <header>
+                    <h1 class='t1' data-info='107+移动端'></h1>
+                    <h2 class='t1' data-info='广播汽车相遇，我们大显神通'></h2>
+                </header>
+                <div class="head-moblie"></div>
+            </div>
+            <div class="box-moblie main-cont">
+                <h2 class='t1' data-info='大显神通之'></h2>
+                <h1 class='t5' data-info='《财神计划》'></h1>
+                <div class="line"></div>
+                <ul>
+                    <li>107+互联网金融+产品大转盘+街头大派送。</li>
+                    <li>整合P2P、O2C、P2C…缔造财经节目神话。</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more fl sbtnLink" data-link-id='4'>收听节目</div>
+                        <div class="btn-more btn-listen fl sPopOpen" data-info-id='4'>了解更多</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_p-center j_bg_small jLazyBgInit" data-src='img/p2/bg/mobile-bg-7.jpg'></div>
+            <div class="J_bg bg_color-black"></div>
+        </section>
+
+        <section class="swiper-slide slide8" data-hash="slide8">
+            <div class='box-moblie main-head'>
+                <header>
+                    <h1 class='t1' data-info='107+移动端'></h1>
+                    <h2 class='t2' data-info='广播与手机相遇，收获惊喜意外'></h2>
+                </header>
+                <div class="head-moblie"></div>
+            </div>
+            <div class="box-moblie main-cont">
+                <h2 class='text'>服务、体验、互动、活动…</h2>
+                <h1 class='text'>107+无限精彩</h1>
+                <div class="line"></div>
+                <ul>
+                    <li>私家车107官方微信“私家车第一广播”，依托广播而生；</li>
+                    <li>突破广播线性约束、地域约束和市场约束；</li>
+                    <li>一式一份，每天三次发行，受众百万微型电子杂志；</li>
+                    <li>自信而立、自主而为、突围而生、媒体融合；</li>
+                    <li>我们不是在路上，而是在领跑的路上。</li>
+                    <li class="box-btn clearfix">
+                        <div class="btn-more fl sPopOpen1" data-case-id='7'>创意展示</div>
+                        <div class="btn-more fl btn-listen sPopOpen" data-info-id='6'>了解更多</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="scroll-Up"></div>
+            <div class="J_bg j_bg_p-center j_bg_small jLazyBgInit" data-src='img/p2/bg/mobile-bg-8.jpg'></div>
+            <div class="J_bg bg_color-black"></div>
+        </section>
+        
+        <section class="swiper-slide slide9" data-hash="slide9">
+
+            <h1 class="pChartTitle clearfix">107大数据 <span>← 左右滑动，查看数据 →</span></h1>
+
+            <section class="swiper-container pChart">
+                <div class="swiper-wrapper">
+                    <article class="swiper-slide pChart1" data-hash="pChart1">
+
+                        <div class="box-chart mainChart">
+                            <header>
+                                <h2>2015年，全年最具魅力的交通广播，省级媒体车上遥遥领先</h2>
+                                <div class="box-line">
+                                    <span class='round round-l'></span>
+                                    <span class="line"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class='round round-r'></span>
+                                </div>
+                            </header>
+                            <article class='contChart'>
+                                <ul class="tChart tChart-1">
+                                    <li>
+                                        <div class="tName">频道</div>
+                                        <div class="tListen">收听率</div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">FM107</div>
+                                        <div class="tListen">0.51%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgRed' style='width:51%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.47%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:47%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.28%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:28%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.23%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:23%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.15%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:15%'></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.14%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:14%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.11%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:11%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.08%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:8%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.06%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:6%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.03%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:3%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.03%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:3%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.02%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:2%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.01%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:1%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.00%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:0%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+
+
+                    </article>
+
+                    <article class="swiper-slide pChart2" data-hash="pChart2">
+
+                        <div class="box-chart mainChart">
+                            <header>
+                                <h2>2015年，全年最有竞争力的私家车媒体，收听市场占有率高达22.90％</h2>
+                                <div class="box-line">
+                                    <span class='round round-l'></span>
+                                    <span class="line"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class='round round-r'></span>
+                                </div>
+                            </header>
+                            <article class='contChart'>
+                                <ul class="tRing tRing-1">
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>0.01%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>0.42%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>1.05%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>1.26%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>1.33%</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>2.65%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>3.71%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>5.11%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>6.19%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>6.92%</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>10.47%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>12.78%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>21.33%</span>
+                                        </div>
+                                    </li>
+                                    <li class="fm">
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>FM107</span>
+                                            <span class='num'>22.99%</span>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </article>
+                        </div>
+
+                    </article>
+
+                    <article class="swiper-slide pChart3" data-hash="pChart3">
+
+                        <div class="box-chart mainChart">
+                            <header>
+                                <h2>2015年，省级媒体周末车载收听率，私家车107排名首位</h2>
+                                <div class="box-line">
+                                    <span class='round round-l'></span>
+                                    <span class="line"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class='round round-r'></span>
+                                </div>
+                            </header>
+                            <article class='contChart'>
+                                <ul class="tChart tChart-2">
+                                    <li>
+                                        <div class="tName">频道</div>
+                                        <div class="tListen">收听率</div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">FM107</div>
+                                        <div class="tListen">0.42%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgRed' style='width:42%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.27%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:27%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.20%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:20%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.15%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:15%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.08%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:8%'></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.08%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:8%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.07%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:7%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+
+                    </article>
+
+                    <article class="swiper-slide pChart4" data-hash="pChart4">
+
+                        <div class="box-chart mainChart">
+                            <header>
+                                <h2>2015年，省级媒体周末车载市场份额，私家车107遥遥领先</h2>
+                                <div class="box-line">
+                                    <span class='round round-l'></span>
+                                    <span class="line"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class='round round-r'></span>
+                                </div>
+                            </header>
+                            <article class='contChart'>
+
+                                <ul class="tRing tRing-2">
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>3.40%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>3.70%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>3.99%</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>7.09%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>9.63%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>××频率</span>
+                                            <span class='num'>12.93%</span>
+                                        </div>
+                                    </li>
+                                    <li class="fm">
+                                        <div class="hold hold1">
+                                            <div class="pie pie1"></div>
+                                        </div>
+                                        <div class="hold hold2">
+                                            <div class="pie pie2"></div>
+                                        </div>
+                                        <div class="bg"> </div>
+                                        <div class="time">
+                                            <span class='name'>FM107</span>
+                                            <span class='num'>19.99%</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </article>
+                        </div>
+
+                    </article>
+
+                    <article class="swiper-slide pChart5" data-hash="pChart5">
+
+                        <div class="box-chart mainChart">
+                            <header>
+                                <h2>暑期黄金周，最具消费青年人群，私家车107车载收听率遥遥领先</h2>
+                                <div class="box-line">
+                                    <span class='round round-l'></span>
+                                    <span class="line"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class='round round-r'></span>
+                                </div>
+                            </header>
+                            <article class='contChart'>
+                                <ul class="tChart tChart-3">
+                                    <li>
+                                        <div class="tName">频道</div>
+                                        <div class="tListen">收听率</div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">FM107</div>
+                                        <div class="tListen">0.53%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgRed' style='width:53%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.33%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:33%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.27%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:27%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.22%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:22%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.16%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:16%'></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.15%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:15%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.10%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:10%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+
+                    </article>
+
+                    <article class="swiper-slide pChart6" data-hash="pChart6">
+
+                        <div class="box-chart mainChart">
+                            <header>
+                                <h2>秋季黄金周，所有最具综合实力的省级广播，整体收听率居首位</h2>
+                                <div class="box-line">
+                                    <span class='round round-l'></span>
+                                    <span class="line"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class='round round-r'></span>
+                                </div>
+                            </header>
+                            <article class='contChart'>
+                                <ul class="tChart tChart-4">
+                                    <li>
+                                        <div class="tName">频道</div>
+                                        <div class="tListen">收听率</div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">FM107</div>
+                                        <div class="tListen">0.76%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgRed' style='width:76%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.74%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:74%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.66%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:66%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.54%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:54%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.40%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:40%'></span>
+                                                <span></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.20%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:20%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tName">××频率</div>
+                                        <div class="tListen">0.13%</div>
+                                        <div class="tChart">
+                                            <span class="tLine">
+                                                <span class='tNLine tNLineBgBlue' style='width:13%'></span>
+                                            </span>
+                                            <span class="tRound tRound-l"></span>
+                                            <span class="tRound tRound-r"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+
+                    </article>
+                    
+                    <article class="swiper-slide pChart7" data-hash="pChart7">
+
+                        <div class="box-chart mainChart">
+                            <header>
+                                <h2>2015“私家车第一广播”，位于全国民生新媒体前三甲！有理想也有价值</h2>
+                                <div class="box-line">
+                                    <span class='round round-l'></span>
+                                    <span class="line"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class='round round-r'></span>
+                                </div>
+                            </header>
+                            <article class='contChart'>
+                                <div class="tPic">
+                                    <div class="btn-big-pic">
+                                        <span class="btn-seepic sPopOpenPic" data-pic-id='8'>
+                                            <svg style="width:80px;height:80px;" version="1.1" id="zoom1" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+                                              <path class="svgpath" data-index="path_0" fill="#ecf0f1" d="M949.316555 904.352993l-197.961654-175.61981c24.506137-30.629601 44.420699-64.673975 59.35176-101.618399 20.078291-49.678446 30.259164-102.420671 30.259164-156.760277 0-54.339606-10.180873-107.080807-30.259164-156.760277-19.421328-48.055482-47.241954-91.229794-82.686211-128.322597-35.538401-37.19104-76.959789-66.407456-123.114992-86.836741-47.89994-21.201881-98.778724-31.952736-151.22419-31.952736s-103.326297 10.749832-151.225213 31.952736c-46.155203 20.429285-87.577614 49.6457-123.116015 86.836741-35.44528 37.093826-63.264882 80.267115-82.688257 128.322597-20.078291 49.678446-30.259164 102.420671-30.259164 156.760277 0 54.339606 10.180873 107.081831 30.259164 156.760277 19.422352 48.055482 47.242977 91.228771 82.688257 128.321574 35.538401 37.19104 76.960813 66.407456 123.116015 86.835717 47.89994 21.201881 98.779747 31.952736 151.225213 31.952736s103.325273-10.750855 151.22419-31.952736c38.335097-16.968463 73.391521-40.017412 104.537891-68.644403l199.126176 176.653349c5.845125 5.185093 13.117762 7.735172 20.361747 7.735172 8.473999 0 16.909112-3.488451 22.975271-10.326183C963.160865 935.007153 962.000436 915.604244 949.316555 904.352993zM453.682291 812.82644c-179.696662 0-325.890278-153.633053-325.890278-342.471932 0-188.840926 146.193617-342.473979 325.890278-342.473979 179.694615 0 325.886185 153.633053 325.886185 342.473979C779.568477 659.19441 633.375883 812.82644 453.682291 812.82644z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <img class='jLazyImgInit' data-src="img/p1/phb-1.png" alt="民生新媒体">
+                                </div>
+                            </article>
+                        </div>
+                    </article>
+
+                    <article class="swiper-slide pChart8" data-hash="pChart8">
+
+                        <div class="box-chart mainChart">
+                            <header>
+                                <h2>2015“私家车第一广播”，位于全国电台新媒体前三甲！有理想也有价值</h2>
+                                <div class="box-line">
+                                    <span class='round round-l'></span>
+                                    <span class="line"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                    <span class='round round-r'></span>
+                                </div>
+                            </header>
+                            <article class='contChart'>
+                                <div class="tPic">
+                                    <div class="btn-big-pic">
+                                        <span class="btn-seepic sPopOpenPic" data-pic-id='9'>
+                                            <svg style="width:80px;height:80px;" version="1.1" id="zoom2" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+                                              <path class="svgpath" data-index="path_0" fill="#ecf0f1" d="M949.316555 904.352993l-197.961654-175.61981c24.506137-30.629601 44.420699-64.673975 59.35176-101.618399 20.078291-49.678446 30.259164-102.420671 30.259164-156.760277 0-54.339606-10.180873-107.080807-30.259164-156.760277-19.421328-48.055482-47.241954-91.229794-82.686211-128.322597-35.538401-37.19104-76.959789-66.407456-123.114992-86.836741-47.89994-21.201881-98.778724-31.952736-151.22419-31.952736s-103.326297 10.749832-151.225213 31.952736c-46.155203 20.429285-87.577614 49.6457-123.116015 86.836741-35.44528 37.093826-63.264882 80.267115-82.688257 128.322597-20.078291 49.678446-30.259164 102.420671-30.259164 156.760277 0 54.339606 10.180873 107.081831 30.259164 156.760277 19.422352 48.055482 47.242977 91.228771 82.688257 128.321574 35.538401 37.19104 76.960813 66.407456 123.116015 86.835717 47.89994 21.201881 98.779747 31.952736 151.225213 31.952736s103.325273-10.750855 151.22419-31.952736c38.335097-16.968463 73.391521-40.017412 104.537891-68.644403l199.126176 176.653349c5.845125 5.185093 13.117762 7.735172 20.361747 7.735172 8.473999 0 16.909112-3.488451 22.975271-10.326183C963.160865 935.007153 962.000436 915.604244 949.316555 904.352993zM453.682291 812.82644c-179.696662 0-325.890278-153.633053-325.890278-342.471932 0-188.840926 146.193617-342.473979 325.890278-342.473979 179.694615 0 325.886185 153.633053 325.886185 342.473979C779.568477 659.19441 633.375883 812.82644 453.682291 812.82644z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <img class='jLazyImgInit' data-src="img/p1/phb-2.png" alt="电台新媒体">
+                                </div>
+                            </article>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+
+
+
+            
+            <div class="source">
+                <span class="logo"></span> 数据来源：央视索福瑞调查研究机构
+            </div>
+            <div class="scroll-Up"></div>
+            <div class="J_bg bg-chart"></div>
+        </section>
+
+        <section class="swiper-slide slide10" data-hash="slide10">
+            <div class="logo-album logo-album-menu"></div>
+
+            <ul class="box-menu-btn">
+                <li>
+                    <a href="index.html">107+私家车</a>
+                </li>
+                <li>
+                    <a href="mobile.html">107+移动端</a>
+                </li>
+                <li>
+                    <a href="compere.html">107+男神女神</a>
+                </li>
+                <li>
+                    <a href="media.html">107+流媒体</a>
+                </li>
+                <li>
+                    <a href="economic.html">107+分享经济</a>
+                </li>
+            </ul>
+            <!-- <div class="scroll-Up"></div> -->
+            <div class="J_bg j_bg_p-center j_bg_big jLazyBgInit" data-src='img/p1/bg/p1-bg-1.jpg'></div>
+            <!-- <div class="J_bg bg_color-black"></div> -->
+        </section>
+    </div>
+</div>
+</form>
+
+</body>
+
+<!--js-->
+<script src="js/jquery.1.11.0.min.js"></script>
+<script src="js/jquery.imgpreload.min.js"></script>
+<script src="js/dist/js/swiper.min.js"></script>
+<script src="js/animo.min.js"></script>
+<script src="js/mobile.js"></script> 
+
+</html>
