@@ -91,13 +91,11 @@ jQuery.imgpreload(the_images,
 		var per=Math.floor((loadImgNum/the_images.length)*100);
 		$('.logo-n').css('opacity',per/100);
 		$("#percent").html(per+'%'+'<br>资源加载中<br>请在WiFi下浏览');
-		
 		if(per>=100){
 			setTimeout(function(){
 				$("#percent").html('100%<br>场景渲染完毕…');
-				
 			},500)
-		}	
+		}
 	},
 	all: function()
 	{
@@ -111,7 +109,7 @@ jQuery.imgpreload(the_images,
 			musicInit();
 			enter_sMoblieSlide0();
 		},1000);
-		
+
 		console.log("预加载图片："+the_images.length+"张");
 	}
 });
@@ -368,7 +366,7 @@ function enter_sMoblieSlide4(){
 								$('.slide4 .box-carLogo .brandLogo li:nth-child(3)').show().animo( { animation: 'fadeInUp', duration: 0.3, delay:0.4});
 								$('.slide4 .box-carLogo .brandLogo li:nth-child(4)').show().animo( { animation: 'fadeInUp', duration: 0.3, delay:0.6});
 								$('.slide4 .box-carLogo .brandLogo li:nth-child(5)').show().animo( { animation: 'fadeInUp', duration: 0.3, delay:0.8});
-			
+
 							});
 						});
 					});
@@ -394,7 +392,7 @@ function enter_sMoblieSlide5(){
 			$('.slide5 .main-cont .line').show().animo( { animation: 'fadeInRight', duration: 0.5},function() {
 				$('.slide5 .main-cont ul li:nth-child(1)').show().animo( { animation: 'fadeInUp', duration: 0.5},function() {
 				$('.slide5 .main-cont ul li:nth-child(2)').show().animo( { animation: 'fadeInUp', duration: 0.5},function() {
-				
+
 					$('.slide5 .main-cont ul li .btn-more:nth-child(1)').show().animo( { animation: 'rubberBand', duration: 0.7});
 					$('.slide5 .main-cont ul li .btn-more:nth-child(2)').show().animo( { animation: 'rubberBand', duration: 0.7},function() {
 						$('.slide5 .main-head header h1').show().animo( { animation: 'fadeInLeft', duration:  0.3});
@@ -403,7 +401,7 @@ function enter_sMoblieSlide5(){
 							$('.slide5 .head-moblie').fadeIn();
 						});
 					});
-				
+
 				});
 				});
 			});
@@ -628,17 +626,17 @@ var s1 = new Swiper('.a1', {
 			out_sMoblieSlide2()
 			enter_sMoblieSlide3();
 			out_sMoblieSlide4()
-		} 
+		}
 		else if(hasSlide4){
 			out_sMoblieSlide3()
 			enter_sMoblieSlide4();
 			out_sMoblieSlide5()
-		} 
+		}
 		else if(hasSlide5){
 			out_sMoblieSlide4()
 			enter_sMoblieSlide5();
 			out_sMoblieSlide6()
-		} 
+		}
 		else if(hasSlide6){
 			out_sMoblieSlide5()
 			enter_sMoblieSlide6();
@@ -648,21 +646,21 @@ var s1 = new Swiper('.a1', {
 			out_sMoblieSlide6()
 			enter_sMoblieSlide7();
 			out_sMoblieSlide8()
-		} 
+		}
 		else if(hasSlide8){
 			out_sMoblieSlide7()
 			enter_sMoblieSlide8();
 			out_sMoblieSlide9()
-		} 
+		}
 		else if(hasSlide9){
 			out_sMoblieSlide8()
 			enter_sMoblieSlide9();
 			out_sMoblieSlide10()
-		} 
+		}
 		else if(hasSlide10){
 			out_sMoblieSlide9()
 			enter_sMoblieSlide10();
-		}  
+		}
 	}
 
 });
@@ -672,7 +670,7 @@ function musicInit(e){
 	var myAudio=document.createElement("audio"),
 	audioHtml= '<div id=audioControl class=play></div>';
 	myAudio.id="music",
-	myAudio.src="song/2.mp3",
+	myAudio.src=" http://www.happy107.com/107album/song/2.mp3 ",
 	myAudio.loop="loop",
 
 	$("#audiocontainer").append(myAudio,audioHtml),
@@ -691,7 +689,7 @@ function musicInit(e){
 	        $('#audioControl').addClass('play');
 	        isMusicPlaying=!0;
 	    }
-	};	
+	};
 }
 
 // 节目链接 地址
@@ -728,13 +726,13 @@ _doc[8]='<div class="sVertical startWork" style="background-color:none;border-ra
 _doc[9]='<div class="sVertical startWork" style="background-color:none;border-radius:0;"><section class="swiper-wrapper"><article class="swiper-slide infoMobile"><img src="img/p1/phb-2.png" alt="民生新媒体" width="100%"></section><div class="sVertical-scrollbar"></div></div>'
 
 function sPopCont(){
-	$('#popLay').addClass('md-show'); 
+	$('#popLay').addClass('md-show');
 	var _sVertical = new Swiper('.sVertical', {
-	    direction: 'vertical', 
+	    direction: 'vertical',
 	    slidesPerView: 'auto',
 	    freeMode: true,
 	    scrollbar: '.sVertical-scrollbar',
-	});	
+	});
 }
 $('.swiper-container').each(function(){
 	$('.sPopOpen').on('touchstart',function(e) {
@@ -747,20 +745,17 @@ $('.swiper-container').each(function(){
 $('.sPopOpen1').on('touchstart',function(e) {
 	var sCase = $(this).data('case-id');
 	$('#popCont').empty().append(_doc[sCase]);
-	$('#popLay').addClass('md-show'); 
+	$('#popLay').addClass('md-show');
 	var s3 = new Swiper('.s3', {
-	    direction: 'horizontal', 
-		loop:true, 
+	    direction: 'horizontal',
+		loop:true,
 	});
 });
 
-
 var _pChart = new Swiper('.pChart', {
 	direction: 'horizontal',
-	loop:true, 
-});	
-
-
+	loop:true,
+});
 // 关闭层
 $('#closePic').on('touchstart',function(e) {
 	$(this).parent().removeClass('md-show');
@@ -769,26 +764,12 @@ $('.swiper-slide').each(function(){
 	$('.sPopOpenPic').on('touchstart',function(e) {
 		var sPic = $(this).data('pic-id');
 		$('#popPic').empty().append(_doc[sPic]);
-		$('#popLayPic').addClass('md-show'); 
+		$('#popLayPic').addClass('md-show');
 		var _sVertical = new Swiper('.sVertical', {
-		    direction: 'vertical', 
+		    direction: 'vertical',
 		    slidesPerView: 'auto',
 		    freeMode: true,
 		    scrollbar: '.sVertical-scrollbar',
-		});	
+		});
 	});
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
